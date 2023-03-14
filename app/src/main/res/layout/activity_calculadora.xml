@@ -145,6 +145,7 @@
 
             <Button
                 android:id="@+id/buttonClear"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"

@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -18,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnCancelar;
     private TextInputEditText etxt;
 
+    private Switch mySwitch;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,8 +31,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCancelar = findViewById(R.id.btnCancelar);
         etxt = findViewById(R.id.etxt);
 
+
         btnAceptar.setOnClickListener(this);
         btnCancelar.setOnClickListener(new MyListener(etxt));
+
 
 
 //        btnAceptar.setOnClickListener(new View.OnClickListener() {
